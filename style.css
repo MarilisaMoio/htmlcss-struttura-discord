@@ -10,7 +10,7 @@ RESET
 /*-------
 DEBUG
 -------*/
-.flex > *{
+.flex > *, [class^="container"]{
     border: 2px dotted black;
 }
 
@@ -19,11 +19,18 @@ GENERAL
 -------*/
 .flex{
     display: flex;
-    justify-content: center;
 }
 
 .container1180{
     max-width: 1180px;
+}
+
+.container800{
+    max-width: 800px
+}
+
+.container1180, .container800 {
+    margin: 0px auto;
 }
 
 /*-------
@@ -33,10 +40,6 @@ HEADER
     background-color: #ADD8E6;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-header .container1180.flex {
-    margin: 0px auto;
 }
 
 .menu > .container1180.flex > *{
@@ -55,4 +58,18 @@ nav{
 
 .login{
     text-align: end;
+}
+
+/* hero--- */
+
+.hero{
+    background-color:#00008B;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container800 > div{
+    background-color: #EE82EE;
+    min-height: 300px;
+    flex-grow: 1;
 }
