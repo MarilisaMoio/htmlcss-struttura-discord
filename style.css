@@ -14,12 +14,15 @@ DEBUG
     border: 2px dotted black;
 }
 
+.flex > .flex > *{
+    border: 2px dotted white;
+}
+
 /*-------
 GENERAL
 -------*/
 .flex{
     display: flex;
-    flex-direction: row;
 }
 
 .container1180{
@@ -115,3 +118,37 @@ main > section:last-child > .container1180 > div{
     width: 100%;
     min-height: 1180px;
 }
+
+/*-------
+FOOTER
+-------*/
+footer > section {
+    background-color: #23272A;
+}
+
+footer > section:first-child {
+    padding-top: 3px;
+    padding-bottom: 30px
+}
+
+.language{
+    width: 33%;
+    background-color: salmon;
+}
+
+.lists {
+    width: 67%;
+}
+
+.lists > div{
+    width: calc(100% / 4);
+    background-color: #20B2AA;
+}
+
+footer div:not(.container1180){
+    min-height: 600px;
+}
+
+
+
+
