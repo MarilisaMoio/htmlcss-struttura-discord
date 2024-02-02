@@ -145,10 +145,25 @@ footer > section:first-child {
     background-color: #20B2AA;
 }
 
-footer div:not(.container1180){
+.lists, .language > div{
     min-height: 600px;
 }
 
+/* end part */
 
+footer section:last-child{
+    padding-top: 20px;
+    border-top: 1px solid white;
+}
 
+footer section:last-child > .container1180{
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: #7FFFD4;
+}
 
+footer section:last-child > .container1180 > div{
+    background-color: #FFB6C1;
+    padding: 1px 6px;
+}
