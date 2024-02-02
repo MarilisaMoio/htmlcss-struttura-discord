@@ -19,6 +19,7 @@ GENERAL
 -------*/
 .flex{
     display: flex;
+    flex-direction: row;
 }
 
 .container1180{
@@ -72,4 +73,38 @@ nav{
     background-color: #EE82EE;
     min-height: 300px;
     flex-grow: 1;
+}
+
+/*-------
+MAIN
+-------*/
+main > section:nth-child(odd){
+    background-color: white;
+}
+
+main > section:nth-child(even){
+    background-color: #D3D3D3;
+}
+
+main > section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+main div:not(.container1180){
+    min-height: 400px;
+}
+
+main .container1180 > div:first-child{
+    width: 60%;
+    background-color: #1E90FF;
+}
+
+main .container1180 > div:last-child{
+    width: 40%;
+    background-color: #FFC0CB;
+}
+
+main > section:nth-child(2) div:first-child{
+    order: 1;
 }
